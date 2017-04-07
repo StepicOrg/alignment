@@ -2,4 +2,14 @@
 
 Alignment: Native C++ -> Python
 
-Based on http://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/c++-wrapping.html and other googling.
+# Installation
+
+`pip install git+https://github.com/StepicOrg/stepik-alignment.git`
+
+# Testing
+
+`./test.sh`
+
+# See also
+
+http://intermediate-and-advanced-software-carpentry.readthedocs.io/en/latest/c++-wrapping.html
