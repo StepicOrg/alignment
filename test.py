@@ -13,7 +13,9 @@ seq2 = 'BBB'
 gap_open = 1
 gap_extend = 1
 substitution_matrix = {('A', 'A'): 1, ('B', 'B'): 2, ('A', 'B'): 0}
+#TODO: fix for substitution_matrix = {('A', 'A'): 1, ('ч', 'ч'): 1, ('B', 'B'): 2, ('A', 'B'): 0}
 matrix = form_matrix(substitution_matrix)
+print(matrix)
 
 alignment = stepik_alignment.alignment(seq1, seq2, gap_open, gap_extend, matrix, False)
 print(alignment.score)

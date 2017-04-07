@@ -7,7 +7,8 @@ version = __import__('version').get_version()
 setup(name='stepik_alignment',
       version=version,
       ext_modules=[
-            Extension('_stepik_alignment', sources=['_stepik_alignment_module.cc', 'stepik_alignment.cpp'])
+          Extension('_stepik_alignment', sources=['_stepik_alignment_module.cc', 'stepik_alignment.cpp'])
       ],
-      description='Stepik Sequence Alignment',
+      py_modules=['stepik_alignment'],
+      description='Stepik Alignment',
       )
