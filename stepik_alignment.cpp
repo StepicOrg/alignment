@@ -265,18 +265,18 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
         }
         else if (p[k][i][j] == this_ && k == 0) { // horisontal gap
             j -= 1;
-            res1 += '-';
+            res1 += '$';
             res2 += s2[j];
         }
         else if (p[k][i][j] == this_ && k == 2) { // vertical gap
             i -= 1;
             res1 += s1[i];
-            res2 += '-';
+            res2 += '$';
         }
         else if (p[k][i][j] == down_ && k == 0) { // gap opening/closing, 1->0
             k = 1;
             j -= 1;
-            res1 += '-';
+            res1 += '$';
             res2 += s2[j];
         }
         else if (p[k][i][j] == down_ && k == 1) { // gap opening/closing, 2->1
@@ -286,7 +286,7 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
             k = 1;
             i -= 1;
             res1 += s1[i];
-            res2 += '-';
+            res2 += '$';
         }
         else if (p[k][i][j] == up_ && k == 1) { // gap opening/closing, 0->1
             k = 0;
