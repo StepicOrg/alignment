@@ -114,7 +114,7 @@ int score(string s1, string s2, int gapop, int gapex, map<char, map<char, int> >
 template <class T>
 void print_matrix(vector<vector<vector<T> > > v);
 
-alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char, map<char, int> > scoring_matrix, bool local) {
+alignment_result alignment(vector<string> s1, vector<string> s2, int gapop, int gapex, map<string, map<string, int> > scoring_matrix, bool local) {
     /* Total gap penalty is gapop + gapex * (L - 1) where L is the length  of the gap */
     gapop -= gapex;
     vector<vector<vector<char> > > p(3, vector<vector<char> >(s1.size() + 1, vector<char>(s2.size() + 1))); // parent
@@ -199,7 +199,7 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
                 p[2][i][j] = up_;
             }
             // middle
-            ths  = d[1][i-1][j-1] + scoring_matrix[s1[i-1]][s2[j-1]];
+            ths  = d[1][i-1][j-1] + scoring_matrix.find(s1[i-1])->second.find(s2[j-1])->second;
             up   = d[0][i][j];
             down = d[2][i][j];
             if (zero >= ths && zero >= up && zero >= down && local) {
@@ -252,7 +252,7 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
             }
         }
     }
-    string res1, res2;
+    vector<string> res1, res2;
     int k = maxk;
     int i = maxi;
     int j = maxj;
@@ -260,24 +260,24 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
         if (p[k][i][j] == this_ && k == 1) { // diagonal
             i -= 1;
             j -= 1;
-            res1 += s1[i];
-            res2 += s2[j];
+            res1.push_back(s1[i]);
+            res2.push_back(s2[j]);
         }
         else if (p[k][i][j] == this_ && k == 0) { // horisontal gap
             j -= 1;
-            res1 += '$';
-            res2 += s2[j];
+            res1.push_back("$");
+            res2.push_back(s2[j]);
         }
         else if (p[k][i][j] == this_ && k == 2) { // vertical gap
             i -= 1;
-            res1 += s1[i];
-            res2 += '$';
+            res1.push_back(s1[i]);
+            res2.push_back("$");
         }
         else if (p[k][i][j] == down_ && k == 0) { // gap opening/closing, 1->0
             k = 1;
             j -= 1;
-            res1 += '$';
-            res2 += s2[j];
+            res1.push_back("$");
+            res2.push_back(s2[j]);
         }
         else if (p[k][i][j] == down_ && k == 1) { // gap opening/closing, 2->1
             k = 2;
@@ -285,8 +285,8 @@ alignment_result alignment(string s1, string s2, int gapop, int gapex, map<char,
         else if (p[k][i][j] == up_ && k == 2) { // gap opening/closing, 1->2
             k = 1;
             i -= 1;
-            res1 += s1[i];
-            res2 += '$';
+            res1.push_back(s1[i]);
+            res2.push_back("$");
         }
         else if (p[k][i][j] == up_ && k == 1) { // gap opening/closing, 0->1
             k = 0;

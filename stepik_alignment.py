@@ -159,26 +159,26 @@ class SwigPyIterator(_object):
 SwigPyIterator_swigregister = _stepik_alignment.SwigPyIterator_swigregister
 SwigPyIterator_swigregister(SwigPyIterator)
 
-class mapChar(_object):
+class mapString(_object):
     __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, mapChar, name, value)
+    __setattr__ = lambda self, name, value: _swig_setattr(self, mapString, name, value)
     __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, mapChar, name)
+    __getattr__ = lambda self, name: _swig_getattr(self, mapString, name)
     __repr__ = _swig_repr
 
     def iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapChar_iterator(self)
+        return _stepik_alignment.mapString_iterator(self)
     def __iter__(self):
         return self.iterator()
 
     def __nonzero__(self) -> "bool":
-        return _stepik_alignment.mapChar___nonzero__(self)
+        return _stepik_alignment.mapString___nonzero__(self)
 
     def __bool__(self) -> "bool":
-        return _stepik_alignment.mapChar___bool__(self)
+        return _stepik_alignment.mapString___bool__(self)
 
-    def __len__(self) -> "std::map< char,int >::size_type":
-        return _stepik_alignment.mapChar___len__(self)
+    def __len__(self) -> "std::map< std::string,int >::size_type":
+        return _stepik_alignment.mapString___len__(self)
     def __iter__(self):
         return self.key_iterator()
     def iterkeys(self):
@@ -188,112 +188,112 @@ class mapChar(_object):
     def iteritems(self):
         return self.iterator()
 
-    def __getitem__(self, key: 'std::map< char,int >::key_type const &') -> "std::map< char,int >::mapped_type const &":
-        return _stepik_alignment.mapChar___getitem__(self, key)
+    def __getitem__(self, key: 'std::map< std::string,int >::key_type const &') -> "std::map< std::string,int >::mapped_type const &":
+        return _stepik_alignment.mapString___getitem__(self, key)
 
-    def __delitem__(self, key: 'std::map< char,int >::key_type const &') -> "void":
-        return _stepik_alignment.mapChar___delitem__(self, key)
+    def __delitem__(self, key: 'std::map< std::string,int >::key_type const &') -> "void":
+        return _stepik_alignment.mapString___delitem__(self, key)
 
-    def has_key(self, key: 'std::map< char,int >::key_type const &') -> "bool":
-        return _stepik_alignment.mapChar_has_key(self, key)
+    def has_key(self, key: 'std::map< std::string,int >::key_type const &') -> "bool":
+        return _stepik_alignment.mapString_has_key(self, key)
 
     def keys(self) -> "PyObject *":
-        return _stepik_alignment.mapChar_keys(self)
+        return _stepik_alignment.mapString_keys(self)
 
     def values(self) -> "PyObject *":
-        return _stepik_alignment.mapChar_values(self)
+        return _stepik_alignment.mapString_values(self)
 
     def items(self) -> "PyObject *":
-        return _stepik_alignment.mapChar_items(self)
+        return _stepik_alignment.mapString_items(self)
 
-    def __contains__(self, key: 'std::map< char,int >::key_type const &') -> "bool":
-        return _stepik_alignment.mapChar___contains__(self, key)
+    def __contains__(self, key: 'std::map< std::string,int >::key_type const &') -> "bool":
+        return _stepik_alignment.mapString___contains__(self, key)
 
     def key_iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapChar_key_iterator(self)
+        return _stepik_alignment.mapString_key_iterator(self)
 
     def value_iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapChar_value_iterator(self)
+        return _stepik_alignment.mapString_value_iterator(self)
 
     def __setitem__(self, *args) -> "void":
-        return _stepik_alignment.mapChar___setitem__(self, *args)
+        return _stepik_alignment.mapString___setitem__(self, *args)
 
     def asdict(self) -> "PyObject *":
-        return _stepik_alignment.mapChar_asdict(self)
+        return _stepik_alignment.mapString_asdict(self)
 
     def __init__(self, *args):
-        this = _stepik_alignment.new_mapChar(*args)
+        this = _stepik_alignment.new_mapString(*args)
         try:
             self.this.append(this)
         except __builtin__.Exception:
             self.this = this
 
     def empty(self) -> "bool":
-        return _stepik_alignment.mapChar_empty(self)
+        return _stepik_alignment.mapString_empty(self)
 
-    def size(self) -> "std::map< char,int >::size_type":
-        return _stepik_alignment.mapChar_size(self)
+    def size(self) -> "std::map< std::string,int >::size_type":
+        return _stepik_alignment.mapString_size(self)
 
-    def swap(self, v: 'mapChar') -> "void":
-        return _stepik_alignment.mapChar_swap(self, v)
+    def swap(self, v: 'mapString') -> "void":
+        return _stepik_alignment.mapString_swap(self, v)
 
-    def begin(self) -> "std::map< char,int >::iterator":
-        return _stepik_alignment.mapChar_begin(self)
+    def begin(self) -> "std::map< std::string,int >::iterator":
+        return _stepik_alignment.mapString_begin(self)
 
-    def end(self) -> "std::map< char,int >::iterator":
-        return _stepik_alignment.mapChar_end(self)
+    def end(self) -> "std::map< std::string,int >::iterator":
+        return _stepik_alignment.mapString_end(self)
 
-    def rbegin(self) -> "std::map< char,int >::reverse_iterator":
-        return _stepik_alignment.mapChar_rbegin(self)
+    def rbegin(self) -> "std::map< std::string,int >::reverse_iterator":
+        return _stepik_alignment.mapString_rbegin(self)
 
-    def rend(self) -> "std::map< char,int >::reverse_iterator":
-        return _stepik_alignment.mapChar_rend(self)
+    def rend(self) -> "std::map< std::string,int >::reverse_iterator":
+        return _stepik_alignment.mapString_rend(self)
 
     def clear(self) -> "void":
-        return _stepik_alignment.mapChar_clear(self)
+        return _stepik_alignment.mapString_clear(self)
 
-    def get_allocator(self) -> "std::map< char,int >::allocator_type":
-        return _stepik_alignment.mapChar_get_allocator(self)
+    def get_allocator(self) -> "std::map< std::string,int >::allocator_type":
+        return _stepik_alignment.mapString_get_allocator(self)
 
-    def count(self, x: 'std::map< char,int >::key_type const &') -> "std::map< char,int >::size_type":
-        return _stepik_alignment.mapChar_count(self, x)
+    def count(self, x: 'std::map< std::string,int >::key_type const &') -> "std::map< std::string,int >::size_type":
+        return _stepik_alignment.mapString_count(self, x)
 
     def erase(self, *args) -> "void":
-        return _stepik_alignment.mapChar_erase(self, *args)
+        return _stepik_alignment.mapString_erase(self, *args)
 
-    def find(self, x: 'std::map< char,int >::key_type const &') -> "std::map< char,int >::iterator":
-        return _stepik_alignment.mapChar_find(self, x)
+    def find(self, x: 'std::map< std::string,int >::key_type const &') -> "std::map< std::string,int >::iterator":
+        return _stepik_alignment.mapString_find(self, x)
 
-    def lower_bound(self, x: 'std::map< char,int >::key_type const &') -> "std::map< char,int >::iterator":
-        return _stepik_alignment.mapChar_lower_bound(self, x)
+    def lower_bound(self, x: 'std::map< std::string,int >::key_type const &') -> "std::map< std::string,int >::iterator":
+        return _stepik_alignment.mapString_lower_bound(self, x)
 
-    def upper_bound(self, x: 'std::map< char,int >::key_type const &') -> "std::map< char,int >::iterator":
-        return _stepik_alignment.mapChar_upper_bound(self, x)
-    __swig_destroy__ = _stepik_alignment.delete_mapChar
+    def upper_bound(self, x: 'std::map< std::string,int >::key_type const &') -> "std::map< std::string,int >::iterator":
+        return _stepik_alignment.mapString_upper_bound(self, x)
+    __swig_destroy__ = _stepik_alignment.delete_mapString
     __del__ = lambda self: None
-mapChar_swigregister = _stepik_alignment.mapChar_swigregister
-mapChar_swigregister(mapChar)
+mapString_swigregister = _stepik_alignment.mapString_swigregister
+mapString_swigregister(mapString)
 
-class mapCharChar(_object):
+class mapStringString(_object):
     __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, mapCharChar, name, value)
+    __setattr__ = lambda self, name, value: _swig_setattr(self, mapStringString, name, value)
     __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, mapCharChar, name)
+    __getattr__ = lambda self, name: _swig_getattr(self, mapStringString, name)
     __repr__ = _swig_repr
 
     def iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapCharChar_iterator(self)
+        return _stepik_alignment.mapStringString_iterator(self)
     def __iter__(self):
         return self.iterator()
 
     def __nonzero__(self) -> "bool":
-        return _stepik_alignment.mapCharChar___nonzero__(self)
+        return _stepik_alignment.mapStringString___nonzero__(self)
 
     def __bool__(self) -> "bool":
-        return _stepik_alignment.mapCharChar___bool__(self)
+        return _stepik_alignment.mapStringString___bool__(self)
 
-    def __len__(self) -> "std::map< char,std::map< char,int > >::size_type":
-        return _stepik_alignment.mapCharChar___len__(self)
+    def __len__(self) -> "std::map< std::string,std::map< std::string,int > >::size_type":
+        return _stepik_alignment.mapStringString___len__(self)
     def __iter__(self):
         return self.key_iterator()
     def iterkeys(self):
@@ -303,91 +303,91 @@ class mapCharChar(_object):
     def iteritems(self):
         return self.iterator()
 
-    def __getitem__(self, key: 'std::map< char,std::map< char,int > >::key_type const &') -> "std::map< char,std::map< char,int > >::mapped_type const &":
-        return _stepik_alignment.mapCharChar___getitem__(self, key)
+    def __getitem__(self, key: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "std::map< std::string,std::map< std::string,int > >::mapped_type const &":
+        return _stepik_alignment.mapStringString___getitem__(self, key)
 
-    def __delitem__(self, key: 'std::map< char,std::map< char,int > >::key_type const &') -> "void":
-        return _stepik_alignment.mapCharChar___delitem__(self, key)
+    def __delitem__(self, key: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "void":
+        return _stepik_alignment.mapStringString___delitem__(self, key)
 
-    def has_key(self, key: 'std::map< char,std::map< char,int > >::key_type const &') -> "bool":
-        return _stepik_alignment.mapCharChar_has_key(self, key)
+    def has_key(self, key: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "bool":
+        return _stepik_alignment.mapStringString_has_key(self, key)
 
     def keys(self) -> "PyObject *":
-        return _stepik_alignment.mapCharChar_keys(self)
+        return _stepik_alignment.mapStringString_keys(self)
 
     def values(self) -> "PyObject *":
-        return _stepik_alignment.mapCharChar_values(self)
+        return _stepik_alignment.mapStringString_values(self)
 
     def items(self) -> "PyObject *":
-        return _stepik_alignment.mapCharChar_items(self)
+        return _stepik_alignment.mapStringString_items(self)
 
-    def __contains__(self, key: 'std::map< char,std::map< char,int > >::key_type const &') -> "bool":
-        return _stepik_alignment.mapCharChar___contains__(self, key)
+    def __contains__(self, key: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "bool":
+        return _stepik_alignment.mapStringString___contains__(self, key)
 
     def key_iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapCharChar_key_iterator(self)
+        return _stepik_alignment.mapStringString_key_iterator(self)
 
     def value_iterator(self) -> "swig::SwigPyIterator *":
-        return _stepik_alignment.mapCharChar_value_iterator(self)
+        return _stepik_alignment.mapStringString_value_iterator(self)
 
     def __setitem__(self, *args) -> "void":
-        return _stepik_alignment.mapCharChar___setitem__(self, *args)
+        return _stepik_alignment.mapStringString___setitem__(self, *args)
 
     def asdict(self) -> "PyObject *":
-        return _stepik_alignment.mapCharChar_asdict(self)
+        return _stepik_alignment.mapStringString_asdict(self)
 
     def __init__(self, *args):
-        this = _stepik_alignment.new_mapCharChar(*args)
+        this = _stepik_alignment.new_mapStringString(*args)
         try:
             self.this.append(this)
         except __builtin__.Exception:
             self.this = this
 
     def empty(self) -> "bool":
-        return _stepik_alignment.mapCharChar_empty(self)
+        return _stepik_alignment.mapStringString_empty(self)
 
-    def size(self) -> "std::map< char,std::map< char,int > >::size_type":
-        return _stepik_alignment.mapCharChar_size(self)
+    def size(self) -> "std::map< std::string,std::map< std::string,int > >::size_type":
+        return _stepik_alignment.mapStringString_size(self)
 
-    def swap(self, v: 'mapCharChar') -> "void":
-        return _stepik_alignment.mapCharChar_swap(self, v)
+    def swap(self, v: 'mapStringString') -> "void":
+        return _stepik_alignment.mapStringString_swap(self, v)
 
-    def begin(self) -> "std::map< char,std::map< char,int > >::iterator":
-        return _stepik_alignment.mapCharChar_begin(self)
+    def begin(self) -> "std::map< std::string,std::map< std::string,int > >::iterator":
+        return _stepik_alignment.mapStringString_begin(self)
 
-    def end(self) -> "std::map< char,std::map< char,int > >::iterator":
-        return _stepik_alignment.mapCharChar_end(self)
+    def end(self) -> "std::map< std::string,std::map< std::string,int > >::iterator":
+        return _stepik_alignment.mapStringString_end(self)
 
-    def rbegin(self) -> "std::map< char,std::map< char,int > >::reverse_iterator":
-        return _stepik_alignment.mapCharChar_rbegin(self)
+    def rbegin(self) -> "std::map< std::string,std::map< std::string,int > >::reverse_iterator":
+        return _stepik_alignment.mapStringString_rbegin(self)
 
-    def rend(self) -> "std::map< char,std::map< char,int > >::reverse_iterator":
-        return _stepik_alignment.mapCharChar_rend(self)
+    def rend(self) -> "std::map< std::string,std::map< std::string,int > >::reverse_iterator":
+        return _stepik_alignment.mapStringString_rend(self)
 
     def clear(self) -> "void":
-        return _stepik_alignment.mapCharChar_clear(self)
+        return _stepik_alignment.mapStringString_clear(self)
 
-    def get_allocator(self) -> "std::map< char,std::map< char,int > >::allocator_type":
-        return _stepik_alignment.mapCharChar_get_allocator(self)
+    def get_allocator(self) -> "std::map< std::string,std::map< std::string,int > >::allocator_type":
+        return _stepik_alignment.mapStringString_get_allocator(self)
 
-    def count(self, x: 'std::map< char,std::map< char,int > >::key_type const &') -> "std::map< char,std::map< char,int > >::size_type":
-        return _stepik_alignment.mapCharChar_count(self, x)
+    def count(self, x: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "std::map< std::string,std::map< std::string,int > >::size_type":
+        return _stepik_alignment.mapStringString_count(self, x)
 
     def erase(self, *args) -> "void":
-        return _stepik_alignment.mapCharChar_erase(self, *args)
+        return _stepik_alignment.mapStringString_erase(self, *args)
 
-    def find(self, x: 'std::map< char,std::map< char,int > >::key_type const &') -> "std::map< char,std::map< char,int > >::iterator":
-        return _stepik_alignment.mapCharChar_find(self, x)
+    def find(self, x: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "std::map< std::string,std::map< std::string,int > >::iterator":
+        return _stepik_alignment.mapStringString_find(self, x)
 
-    def lower_bound(self, x: 'std::map< char,std::map< char,int > >::key_type const &') -> "std::map< char,std::map< char,int > >::iterator":
-        return _stepik_alignment.mapCharChar_lower_bound(self, x)
+    def lower_bound(self, x: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "std::map< std::string,std::map< std::string,int > >::iterator":
+        return _stepik_alignment.mapStringString_lower_bound(self, x)
 
-    def upper_bound(self, x: 'std::map< char,std::map< char,int > >::key_type const &') -> "std::map< char,std::map< char,int > >::iterator":
-        return _stepik_alignment.mapCharChar_upper_bound(self, x)
-    __swig_destroy__ = _stepik_alignment.delete_mapCharChar
+    def upper_bound(self, x: 'std::map< std::string,std::map< std::string,int > >::key_type const &') -> "std::map< std::string,std::map< std::string,int > >::iterator":
+        return _stepik_alignment.mapStringString_upper_bound(self, x)
+    __swig_destroy__ = _stepik_alignment.delete_mapStringString
     __del__ = lambda self: None
-mapCharChar_swigregister = _stepik_alignment.mapCharChar_swigregister
-mapCharChar_swigregister(mapCharChar)
+mapStringString_swigregister = _stepik_alignment.mapStringString_swigregister
+mapStringString_swigregister(mapStringString)
 
 class intPair(_object):
     __swig_setmethods__ = {}
@@ -542,6 +542,232 @@ class vecIntPair(_object):
 vecIntPair_swigregister = _stepik_alignment.vecIntPair_swigregister
 vecIntPair_swigregister(vecIntPair)
 
+class StringVector(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, StringVector, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, StringVector, name)
+    __repr__ = _swig_repr
+
+    def iterator(self) -> "swig::SwigPyIterator *":
+        return _stepik_alignment.StringVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self) -> "bool":
+        return _stepik_alignment.StringVector___nonzero__(self)
+
+    def __bool__(self) -> "bool":
+        return _stepik_alignment.StringVector___bool__(self)
+
+    def __len__(self) -> "std::vector< std::string >::size_type":
+        return _stepik_alignment.StringVector___len__(self)
+
+    def __getslice__(self, i: 'std::vector< std::string >::difference_type', j: 'std::vector< std::string >::difference_type') -> "std::vector< std::string,std::allocator< std::string > > *":
+        return _stepik_alignment.StringVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args) -> "void":
+        return _stepik_alignment.StringVector___setslice__(self, *args)
+
+    def __delslice__(self, i: 'std::vector< std::string >::difference_type', j: 'std::vector< std::string >::difference_type') -> "void":
+        return _stepik_alignment.StringVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args) -> "void":
+        return _stepik_alignment.StringVector___delitem__(self, *args)
+
+    def __getitem__(self, *args) -> "std::vector< std::string >::value_type const &":
+        return _stepik_alignment.StringVector___getitem__(self, *args)
+
+    def __setitem__(self, *args) -> "void":
+        return _stepik_alignment.StringVector___setitem__(self, *args)
+
+    def pop(self) -> "std::vector< std::string >::value_type":
+        return _stepik_alignment.StringVector_pop(self)
+
+    def append(self, x: 'std::vector< std::string >::value_type const &') -> "void":
+        return _stepik_alignment.StringVector_append(self, x)
+
+    def empty(self) -> "bool":
+        return _stepik_alignment.StringVector_empty(self)
+
+    def size(self) -> "std::vector< std::string >::size_type":
+        return _stepik_alignment.StringVector_size(self)
+
+    def swap(self, v: 'StringVector') -> "void":
+        return _stepik_alignment.StringVector_swap(self, v)
+
+    def begin(self) -> "std::vector< std::string >::iterator":
+        return _stepik_alignment.StringVector_begin(self)
+
+    def end(self) -> "std::vector< std::string >::iterator":
+        return _stepik_alignment.StringVector_end(self)
+
+    def rbegin(self) -> "std::vector< std::string >::reverse_iterator":
+        return _stepik_alignment.StringVector_rbegin(self)
+
+    def rend(self) -> "std::vector< std::string >::reverse_iterator":
+        return _stepik_alignment.StringVector_rend(self)
+
+    def clear(self) -> "void":
+        return _stepik_alignment.StringVector_clear(self)
+
+    def get_allocator(self) -> "std::vector< std::string >::allocator_type":
+        return _stepik_alignment.StringVector_get_allocator(self)
+
+    def pop_back(self) -> "void":
+        return _stepik_alignment.StringVector_pop_back(self)
+
+    def erase(self, *args) -> "std::vector< std::string >::iterator":
+        return _stepik_alignment.StringVector_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _stepik_alignment.new_StringVector(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+
+    def push_back(self, x: 'std::vector< std::string >::value_type const &') -> "void":
+        return _stepik_alignment.StringVector_push_back(self, x)
+
+    def front(self) -> "std::vector< std::string >::value_type const &":
+        return _stepik_alignment.StringVector_front(self)
+
+    def back(self) -> "std::vector< std::string >::value_type const &":
+        return _stepik_alignment.StringVector_back(self)
+
+    def assign(self, n: 'std::vector< std::string >::size_type', x: 'std::vector< std::string >::value_type const &') -> "void":
+        return _stepik_alignment.StringVector_assign(self, n, x)
+
+    def resize(self, *args) -> "void":
+        return _stepik_alignment.StringVector_resize(self, *args)
+
+    def insert(self, *args) -> "void":
+        return _stepik_alignment.StringVector_insert(self, *args)
+
+    def reserve(self, n: 'std::vector< std::string >::size_type') -> "void":
+        return _stepik_alignment.StringVector_reserve(self, n)
+
+    def capacity(self) -> "std::vector< std::string >::size_type":
+        return _stepik_alignment.StringVector_capacity(self)
+    __swig_destroy__ = _stepik_alignment.delete_StringVector
+    __del__ = lambda self: None
+StringVector_swigregister = _stepik_alignment.StringVector_swigregister
+StringVector_swigregister(StringVector)
+
+class ConstCharVector(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ConstCharVector, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ConstCharVector, name)
+    __repr__ = _swig_repr
+
+    def iterator(self) -> "swig::SwigPyIterator *":
+        return _stepik_alignment.ConstCharVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self) -> "bool":
+        return _stepik_alignment.ConstCharVector___nonzero__(self)
+
+    def __bool__(self) -> "bool":
+        return _stepik_alignment.ConstCharVector___bool__(self)
+
+    def __len__(self) -> "std::vector< char const * >::size_type":
+        return _stepik_alignment.ConstCharVector___len__(self)
+
+    def __getslice__(self, i: 'std::vector< char const * >::difference_type', j: 'std::vector< char const * >::difference_type') -> "std::vector< char const *,std::allocator< char const * > > *":
+        return _stepik_alignment.ConstCharVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args) -> "void":
+        return _stepik_alignment.ConstCharVector___setslice__(self, *args)
+
+    def __delslice__(self, i: 'std::vector< char const * >::difference_type', j: 'std::vector< char const * >::difference_type') -> "void":
+        return _stepik_alignment.ConstCharVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args) -> "void":
+        return _stepik_alignment.ConstCharVector___delitem__(self, *args)
+
+    def __getitem__(self, *args) -> "std::vector< char const * >::value_type":
+        return _stepik_alignment.ConstCharVector___getitem__(self, *args)
+
+    def __setitem__(self, *args) -> "void":
+        return _stepik_alignment.ConstCharVector___setitem__(self, *args)
+
+    def pop(self) -> "std::vector< char const * >::value_type":
+        return _stepik_alignment.ConstCharVector_pop(self)
+
+    def append(self, x: 'std::vector< char const * >::value_type') -> "void":
+        return _stepik_alignment.ConstCharVector_append(self, x)
+
+    def empty(self) -> "bool":
+        return _stepik_alignment.ConstCharVector_empty(self)
+
+    def size(self) -> "std::vector< char const * >::size_type":
+        return _stepik_alignment.ConstCharVector_size(self)
+
+    def swap(self, v: 'ConstCharVector') -> "void":
+        return _stepik_alignment.ConstCharVector_swap(self, v)
+
+    def begin(self) -> "std::vector< char const * >::iterator":
+        return _stepik_alignment.ConstCharVector_begin(self)
+
+    def end(self) -> "std::vector< char const * >::iterator":
+        return _stepik_alignment.ConstCharVector_end(self)
+
+    def rbegin(self) -> "std::vector< char const * >::reverse_iterator":
+        return _stepik_alignment.ConstCharVector_rbegin(self)
+
+    def rend(self) -> "std::vector< char const * >::reverse_iterator":
+        return _stepik_alignment.ConstCharVector_rend(self)
+
+    def clear(self) -> "void":
+        return _stepik_alignment.ConstCharVector_clear(self)
+
+    def get_allocator(self) -> "std::vector< char const * >::allocator_type":
+        return _stepik_alignment.ConstCharVector_get_allocator(self)
+
+    def pop_back(self) -> "void":
+        return _stepik_alignment.ConstCharVector_pop_back(self)
+
+    def erase(self, *args) -> "std::vector< char const * >::iterator":
+        return _stepik_alignment.ConstCharVector_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _stepik_alignment.new_ConstCharVector(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+
+    def push_back(self, x: 'std::vector< char const * >::value_type') -> "void":
+        return _stepik_alignment.ConstCharVector_push_back(self, x)
+
+    def front(self) -> "std::vector< char const * >::value_type":
+        return _stepik_alignment.ConstCharVector_front(self)
+
+    def back(self) -> "std::vector< char const * >::value_type":
+        return _stepik_alignment.ConstCharVector_back(self)
+
+    def assign(self, n: 'std::vector< char const * >::size_type', x: 'std::vector< char const * >::value_type') -> "void":
+        return _stepik_alignment.ConstCharVector_assign(self, n, x)
+
+    def resize(self, *args) -> "void":
+        return _stepik_alignment.ConstCharVector_resize(self, *args)
+
+    def insert(self, *args) -> "void":
+        return _stepik_alignment.ConstCharVector_insert(self, *args)
+
+    def reserve(self, n: 'std::vector< char const * >::size_type') -> "void":
+        return _stepik_alignment.ConstCharVector_reserve(self, n)
+
+    def capacity(self) -> "std::vector< char const * >::size_type":
+        return _stepik_alignment.ConstCharVector_capacity(self)
+    __swig_destroy__ = _stepik_alignment.delete_ConstCharVector
+    __del__ = lambda self: None
+ConstCharVector_swigregister = _stepik_alignment.ConstCharVector_swigregister
+ConstCharVector_swigregister(ConstCharVector)
+
 class alignment_result(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, alignment_result, name, value)
@@ -573,33 +799,9 @@ alignment_result_swigregister = _stepik_alignment.alignment_result_swigregister
 alignment_result_swigregister(alignment_result)
 
 
-def score(s1: 'std::string', s2: 'std::string', gapop: 'int', gapex: 'int', scoring_matrix: 'mapCharChar', local: 'bool') -> "int":
-    return _stepik_alignment.score(s1, s2, gapop, gapex, scoring_matrix, local)
-score = _stepik_alignment.score
-
-def alignment(s1: 'std::string', s2: 'std::string', gapop: 'int', gapex: 'int', scoring_matrix: 'mapCharChar', local: 'bool') -> "alignment_result":
+def alignment(s1: 'StringVector', s2: 'StringVector', gapop: 'int', gapex: 'int', scoring_matrix: 'mapStringString', local: 'bool') -> "alignment_result":
     return _stepik_alignment.alignment(s1, s2, gapop, gapex, scoring_matrix, local)
 alignment = _stepik_alignment.alignment
-
-def fitting_score(s1: 'std::string', s2: 'std::string', gap: 'int', scoring_matrix: 'mapCharChar') -> "int":
-    return _stepik_alignment.fitting_score(s1, s2, gap, scoring_matrix)
-fitting_score = _stepik_alignment.fitting_score
-
-def overlap_score(s1: 'std::string', s2: 'std::string', gap: 'int', scoring_matrix: 'mapCharChar') -> "int":
-    return _stepik_alignment.overlap_score(s1, s2, gap, scoring_matrix)
-overlap_score = _stepik_alignment.overlap_score
-
-def semiglobal_score(s1: 'std::string', s2: 'std::string', gap: 'int', scoring_matrix: 'mapCharChar') -> "int":
-    return _stepik_alignment.semiglobal_score(s1, s2, gap, scoring_matrix)
-semiglobal_score = _stepik_alignment.semiglobal_score
-
-def no_deletion_score(s: 'std::string', t: 'std::string', gap: 'int', scoring_matrix: 'mapCharChar') -> "int":
-    return _stepik_alignment.no_deletion_score(s, t, gap, scoring_matrix)
-no_deletion_score = _stepik_alignment.no_deletion_score
-
-def k_edit_matches(k: 'int', text: 'std::string', pattern: 'std::string') -> "std::vector< std::pair< int,int >,std::allocator< std::pair< int,int > > >":
-    return _stepik_alignment.k_edit_matches(k, text, pattern)
-k_edit_matches = _stepik_alignment.k_edit_matches
 # This file is compatible with both classic and new-style classes.
 
 
